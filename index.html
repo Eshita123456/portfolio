@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">YourLogo</div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-blue-500">Home</a>
+        <a href="#about" class="hover:text-blue-500">About Me</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <button class="md:hidden" data-collapse-toggle="navbar">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div class="md:hidden hidden px-4 pb-4" id="navbar">
+      <a href="#home" class="block py-2">Home</a>
+      <a href="#about" class="block py-2">About Me</a>
+      <a href="#projects" class="block py-2">Projects</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('https://via.placeholder.com/1600x900');">
+    <div class="text-center text-white bg-black bg-opacity-50 p-6 rounded-xl">
+      <h1 class="text-5xl font-bold mb-4">Hello, I'm [Eshita srivastava]</h1>
+      <p class="text-xl mb-6">Web Developer, Designer, and Content Creator</p>
+      <a href="#projects" class="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center md:space-x-10">
+        <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-full w-40 h-40 mb-6 md:mb-0">
+        <div>
+          <p class="mb-4">I'm a passionate developer with experience in building responsive and interactive websites using modern technologies.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">HTML</span>
+            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">CSS</span>
+            <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">JavaScript</span>
+            <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">React</span>
+            <span class="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Tailwind</span>
+            <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x200" alt="Project 1">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Project One</h3>
+            <p class="mb-2">A project description goes here. Built with HTML, CSS, JS.</p>
+            <a href="#" class="text-blue-600 hover:underline">View Project</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x200" alt="Project 2">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Project Two</h3>
+            <p class="mb-2">A project description goes here. Built with React and Tailwind.</p>
+            <a href="#" class="text-blue-600 hover:underline">View Project</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400x200" alt="Project 3">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">Project Three</h3>
+            <p class="mb-2">A project description goes here. Built with APIs and Git.</p>
+            <a href="#" class="text-blue-600 hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <form class="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6">
+        <div class="mb-4">
+          <label class="block text-sm font-semibold mb-2">Name</label>
+          <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring" placeholder="Your Name">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-semibold mb-2">Email</label>
+          <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring" placeholder="Your Email">
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-semibold mb-2">Message</label>
+          <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+      </form>
+      <div class="mt-6 flex justify-center space-x-6">
+        <a href="#" class="text-xl text-gray-600 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-xl text-gray-600 hover:text-gray-900"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-xl text-gray-600 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-800 text-white text-center">
+    <p>© 2025 Your Name. All rights reserved.</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Terms of Service</a>
+    </div>
+  </footer>
+</body>
+
+</html>
