@@ -2,145 +2,215 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eshita Srivastava Portfolio</title>
+  <!-- Tailwind and other styles/scripts -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.5/dist/flowbite.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+
+  <!-- ✅ Correct Font Awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-1ycn6Ica999a6Y3RZF+6rg0R9Wgr+RCt+V3l6KpAo+0ZfBqY1sYzFa9lYxDxR2jH8aOZw8wA6XV2Hs6w9ue6+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 
-<body class="font-sans text-gray-800 bg-white">
+<body class="bg-gray-900 text-white">
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white shadow-md">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <div class="text-2xl font-bold">YourLogo</div>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#home" class="hover:text-blue-500">Home</a>
-        <a href="#about" class="hover:text-blue-500">About Me</a>
-        <a href="#projects" class="hover:text-blue-500">Projects</a>
-        <a href="#contact" class="hover:text-blue-500">Contact</a>
-      </nav>
-      <button class="md:hidden" data-collapse-toggle="navbar">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-    <div class="md:hidden hidden px-4 pb-4" id="navbar">
-      <a href="#home" class="block py-2">Home</a>
-      <a href="#about" class="block py-2">About Me</a>
-      <a href="#projects" class="block py-2">Projects</a>
-      <a href="#contact" class="block py-2">Contact</a>
+  <header class="sticky top-0 z-50 bg-sky-200 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-2xl font-bold text-indigo-600">
+          Eshita Srivastava
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="text-gray-700 hover:text-indigo-600">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-indigo-600">About Me</a>
+          <a href="#projects" class="text-gray-700 hover:text-indigo-600">Projects</a>
+          <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+        </nav>
+        <details class="md:hidden relative">
+          <summary class="cursor-pointer text-gray-700 text-2xl list-none">
+            &#9776;
+          </summary>
+          <div class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Projects</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+          </div>
+        </details>
+      </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('https://via.placeholder.com/1600x900');">
-    <div class="text-center text-white bg-black bg-opacity-50 p-6 rounded-xl">
-      <h1 class="text-5xl font-bold mb-4">Hello, I'm [Eshita srivastava]</h1>
-      <p class="text-xl mb-6">Web Developer, Designer, and Content Creator</p>
-      <a href="#projects" class="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition">View My Work</a>
+  <section id="home"
+    class="min-h-screen bg-gray-900 text-white px-6 md:px-20 py-10 flex flex-col md:flex-row items-center justify-center gap-10">
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="./images/WhatsApp Image 2025-07-09 at 8.21.39 PM (1).jpeg" alt="Eshita Srivastava"
+        class="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover shadow-lg" />
+    </div>
+    <div class="w-full md:w-1/2">
+      <div class="bg-black bg-opacity-70 p-6 rounded-xl text-center md:text-left">
+        <h1 class="text-5xl font-bold mb-4">Hello, I'm Eshita Srivastava</h1>
+        <p class="text-xl mb-6">
+          Web Developer, Designer, and Content Creator.
+        </p>
+        <a href="#projects"
+          class="inline-block bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition">View My
+          Work</a>
+      </div>
     </div>
   </section>
 
-  <!-- About Me -->
-  <section id="about" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
-      <div class="flex flex-col md:flex-row items-center md:space-x-10">
-        <img src="https://via.placeholder.com/150" alt="Profile" class="rounded-full w-40 h-40 mb-6 md:mb-0">
-        <div>
-          <p class="mb-4">I'm a passionate developer with experience in building responsive and interactive websites using modern technologies.</p>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">HTML</span>
-            <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">CSS</span>
-            <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">JavaScript</span>
-            <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">React</span>
-            <span class="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Tailwind</span>
-            <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Git</span>
-          </div>
-        </div>
+  <!-- About -->
+  <section id="about" class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white py-16 px-6 md:px-20">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+      <p class="text-lg mb-8 leading-relaxed text-center md:text-left">
+        Hi! I'm <strong>Eshita Srivastava</strong>, a dedicated MERN Stack
+        Developer with a passion for building dynamic, user-focused web
+        applications. I specialize in JavaScript-based technologies like
+        MongoDB, Express.js, React, and Node.js.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
+        <span class="bg-blue-100 text-blue-800 font-semibold px-4 py-2 rounded-full text-center">HTML</span>
+        <span class="bg-yellow-100 text-yellow-800 font-semibold px-4 py-2 rounded-full text-center">CSS</span>
+        <span class="bg-purple-100 text-purple-800 font-semibold px-4 py-2 rounded-full text-center">JavaScript</span>
+        <span class="bg-cyan-100 text-cyan-800 font-semibold px-4 py-2 rounded-full text-center">React</span>
+        <span class="bg-green-100 text-green-800 font-semibold px-4 py-2 rounded-full text-center">Node.js</span>
+        <span class="bg-pink-100 text-pink-800 font-semibold px-4 py-2 rounded-full text-center">MongoDB</span>
+        <span class="bg-red-100 text-red-800 font-semibold px-4 py-2 rounded-full text-center">Express.js</span>
+        <span class="bg-gray-200 text-gray-800 font-semibold px-4 py-2 rounded-full text-center">Git & GitHub</span>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="https://via.placeholder.com/400x200" alt="Project 1">
-          <div class="p-4">
-            <h3 class="font-bold text-xl mb-2">Project One</h3>
-            <p class="mb-2">A project description goes here. Built with HTML, CSS, JS.</p>
-            <a href="#" class="text-blue-600 hover:underline">View Project</a>
+<section id="projects" class="py-16 bg-white text-black">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-white border border-black rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+        <img src="./images/download 1.png" alt="To-Do App"
+          class="w-full h-48 object-cover border-b border-black" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">To-Do Application</h3>
+          <p class="text-gray-700 mb-4 text-sm leading-relaxed">
+            Task management app to add, update, delete, and categorize users.
+            Built using HTML, CSS, and JavaScript.
+          </p>
+          <div class="flex space-x-4 text-lg flex justify-between">
+            <a href="https://github.com/Eshita123456/To--do-Application" target="_blank"
+              class="text-blue-600 hover:underline">GitHub</a>
+            <a href="https://js-project-nine-orpin.vercel.app/" target="_blank"
+              class="text-green-600 hover:underline">Live Demo</a>
           </div>
         </div>
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="https://via.placeholder.com/400x200" alt="Project 2">
-          <div class="p-4">
-            <h3 class="font-bold text-xl mb-2">Project Two</h3>
-            <p class="mb-2">A project description goes here. Built with React and Tailwind.</p>
-            <a href="#" class="text-blue-600 hover:underline">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white border border-black rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+        <img src="./images/download 2.png" alt="Instagram Clone"
+          class="w-full h-48 object-cover border-b border-black" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Instagram Clone</h3>
+          <p class="text-gray-700 mb-4 text-sm leading-relaxed">
+            Frontend layout of Instagram with sidebar, stories, and feed UI.
+            Built using HTML and CSS.
+          </p>
+          <div class="flex space-x-4 text-lg flex justify-between">
+            <a href="https://github.com/Eshita123456/Instagram-Clone" target="_blank"
+              class="text-blue-600 hover:underline">GitHub</a>
+            <a href="https://insta-clone-orcin-three.vercel.app/" target="_blank"
+              class="text-green-600 hover:underline">Live Demo</a>
           </div>
         </div>
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img src="https://via.placeholder.com/400x200" alt="Project 3">
-          <div class="p-4">
-            <h3 class="font-bold text-xl mb-2">Project Three</h3>
-            <p class="mb-2">A project description goes here. Built with APIs and Git.</p>
-            <a href="#" class="text-blue-600 hover:underline">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white border border-black rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+        <img src="./images/download 4.png" alt="Bootstrap Webpage"
+          class="w-full h-48 object-cover border-b border-black" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold mb-2">Responsive Flexbox Template</h3>
+          <p class="text-gray-700 mb-4 text-sm leading-relaxed">
+            A responsive homepage using Bootstrap and Flexbox for layout and design.
+          </p>
+          <div class="flex space-x-4 text-lg flex justify-between">
+            <a href="https://github.com/Eshita123456/webpage-using-bootstrap" target="_blank"
+              class="text-blue-600 hover:underline">GitHub</a>
+            <a href="https://webpage-using-bootstrap.vercel.app/" target="_blank"
+              class="text-green-600 hover:underline">Live Demo</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 bg-gray-100">
+  <section id="contact" class="py-16 bg-black-100">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <h2 class="text-3xl font-bold text-center mb-8 text-white-900">
+        Contact Me
+      </h2>
       <form class="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6">
         <div class="mb-4">
           <label class="block text-sm font-semibold mb-2">Name</label>
-          <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring" placeholder="Your Name">
+          <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring"
+            placeholder="Your Name" />
         </div>
         <div class="mb-4">
           <label class="block text-sm font-semibold mb-2">Email</label>
-          <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring" placeholder="Your Email">
+          <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring"
+            placeholder="Your Email" />
         </div>
         <div class="mb-4">
           <label class="block text-sm font-semibold mb-2">Message</label>
-          <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring" rows="4" placeholder="Your Message"></textarea>
+          <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring" rows="4"
+            placeholder="Your Message"></textarea>
         </div>
-        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+          Send Message
+        </button>
       </form>
-      <div class="mt-6 flex justify-center space-x-6">
-        <a href="#" class="text-xl text-gray-600 hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="text-xl text-gray-600 hover:text-gray-900"><i class="fab fa-github"></i></a>
-        <a href="#" class="text-xl text-gray-600 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-6 bg-gray-800 text-white text-center">
-    <p>© 2025 Your Name. All rights reserved.</p>
-    <div class="mt-2 space-x-4">
-      <a href="#" class="hover:underline">Privacy Policy</a>
-      <a href="#" class="hover:underline">Terms of Service</a>
+  <!-- Footer Section -->
+
+<footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2025 Eshita Srivastava | All Rights Reserved</p>
+
+    <div class="mt-4 space-x-6">
+        <a href="https://www.linkedin.com/in/eshita-srivastava?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+           class="hover:text-gray-400" 
+           target="_blank" 
+           rel="noopener noreferrer">
+           LinkedIn
+        </a>
+
+        <a href="https://github.com/Eshita123456" 
+           class="hover:text-gray-400" 
+           target="_blank" 
+           rel="noopener noreferrer">
+           GitHub
+        </a>
+
+        <a href="#" class="hover:text-gray-400">Twitter</a>
     </div>
-  </footer>
+</footer>
+
 </body>
 
 </html>
